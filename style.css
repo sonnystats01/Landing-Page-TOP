@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+
+}
+/* images need to be half the size */
+img {
+    width: 50%;
+}
+/* buttons need to be a little bit bigger and more rounded edges */
+button {
+    background-color: #3882F6;
+    border-radius: 20%;
+    padding: 5px;
+}
+/* This controls the whole background color and the text color of the whole upper part of the website */
+
+.background-header-color {
+    background-color: #1F2937;
+    color: #f9faf8;
+}
+/* changes the links color */
+.background-header  a {
+    color: #e5e7eb
+}
+
+/* This makes sure that the logo is on the far left and that the nav links are to the right  */
+.links-wrapper {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+}
+/* another confirmation to make sure that the logo is all the way to the left */
+.header-logo {
+    align-self: flex-start;
+    flex-grow: 1;
+}
+
+
+/* Trying to change the color of the links after you click on them */
+.right-links a:visited {
+    align-self: flex-end;
+    text-decoration: none;
+    
+}
+/* This was a tough one, but making sure that the entire main section was wrapped in a flex was the biggest help */
+main {
+    display: flex;
+}
+/* This was to make sure that the text and the button was on the left side and in the center and
+ the image was on the right */
+.text-with-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Wrapping big sections and putting them in flex really does help */
+.flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/* making images in the flex-wrapper section smaller to make a sort of list going from left to right */
+.flex-wrapper img {
+    width: 50%;
+}
+/* Putting the text on the bottom of every picture- with wrapping every image and description 
+in another div and styling them all the exact same way  */
+.card {
+    display: flex;
+    flex-direction: column;
+}
+/* had to style the h2 by itself as it was by itself anyways */
+section h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+/* since the quote had it's own little article section, it was easier to style that way with all in one go */
+article {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    text-align: center;
+    font-style: italic;
+    margin: 25px 0 25px 0;
+    padding: 50px;
+}
+
+
+/* this will be styling the little sign up button and some text on the side */
+.background-wrapper {
+    background-color: #3882F6;
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+/* like with the image and text on the top of the website, have to wrap each one individually to make it easier 
+this one wraps the text in that blue section */
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: -25px;
+    margin-bottom: -25px;
+} 
+
+/* changing the color of some of the text */
+.text-wrapper p {
+    color: #e5e7eb;
+}
+/* had to wrap the button to get it on the other side of the text  */
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+/* style changes to the button so that it looked better */
+.button-wrapper button {
+    font-size: 25px;
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 45px;
+    border: 1px solid white;
+    color: white;
+}
+
+
+/* styling the very bottom of the webpage that contains the copyright with the different text and background color */
+
+.copyright p {
+    background-color: #1F2937;
+    color: #f9faf8;
+    text-align: center;
+    font-size: 25px;
+    padding: 45px;
+    
+}
+
+
